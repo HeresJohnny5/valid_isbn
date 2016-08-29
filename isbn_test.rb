@@ -45,4 +45,20 @@ class TestToCheckForDashOrSpace < Minitest::Test
 		assert_equal("12345", string_removes_space_or_dash("123-45"))
 	end
 
+	def test_string_with_dash_and_space
+		assert_equal("0123456789", string_removes_space_or_dash(" -01-2 3  4-- -56789"))
+	end
+
+end
+
+class TestTheSumOfIsbn < Minitest::Test
+
+	def test_the_sum_of_a_isbn_returns_array_of_numbers
+		assert_equal([7, 8, 6, 4, 15, 54, 28, 56, 54], multiply_the_element_by_position_and_sum(["7", "4", "2", "1", "3", "9", "4", "7", "6", "1"]))
+	end
+
+	def test_the_sum_of_an_array_of_numbers_returns_array_total
+		assert_equal([232], sum_numbers_in_array([7, 8, 6, 4, 15, 54, 28, 56, 54]))
+	end
+
 end
