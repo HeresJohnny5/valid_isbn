@@ -52,7 +52,7 @@ end
 # Valid ISBN
 isbn_number("047195869") # "0471958697"
 isbn_number("0-321-14653-") # "0-321-14653-0"
-isbn_number("87719586") # "877195869"
+isbn_number("877195869") # "877195869X"
 
 # Invalid ISBN
 isbn_number("478047005902") # Fails - "Please enter 9 numeric characters."
