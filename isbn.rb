@@ -20,21 +20,31 @@ def string_removes_space_or_dash(string)
 
 end
 
-def multiply_the_element_by_position_and_sum(array_of_number_of_strings)
-	# ["7", "4", "2", "1", "3", "9", "4", "7", "6", "1"]
-	empty_array = []
+def multiply_the_element_by_position_and_return_array_of_numbers(array_of_number_of_strings)
+	# ["7", "4", "2", "1", "3", "9", "4", "7", "6", "1"] - array_of_number_of_strings
+	# [7, 8, 6, 4, 15, 54, 28, 56, 54] - return_array
+	return_array = []
 
 	array_of_number_of_strings.each_with_index do |value, index|
 		if index < 9
 			return_value = (index + 1) * value.to_i
-			empty_array.push(return_value)
+			return_array.push(return_value)
 		end
 	end
-	empty_array
+	return_array
 
 end
 
 def sum_numbers_in_array(array)
-	empty_array = []
-	empty_array.push(array.inject(:+))
+	array.inject(:+)
 end
+
+def modulos_of_sum(sum)
+
+	if check_sum == 10
+		"X"
+	else
+		check_sum
+	end
+end
+
