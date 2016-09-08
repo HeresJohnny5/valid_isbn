@@ -92,4 +92,8 @@ class TestTheSumOfIsbn < Minitest::Test
 		assert_equal("X", modulos_of_sum(21))
 	end
 
+	def test_modulos_is_equal_to_last_index_of_array
+		assert_equal()
+	end
+
 end

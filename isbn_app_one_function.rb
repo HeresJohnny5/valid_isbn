@@ -49,12 +49,12 @@ def isbn_number(string)
 	end
 end
 
-# Valid ISBN
-isbn_number("047195869") # "0471958697"
-isbn_number("0-321-14653-") # "0-321-14653-0"
-isbn_number("877195869") # "877195869X"
+# # Valid ISBN
+# isbn_number("047195869") # "0471958697"
+# isbn_number("0-321-14653-") # "0-321-14653-0"
+# isbn_number("877195869") # "877195869X"
 
-# Invalid ISBN
-isbn_number("478047005902") # Fails - "Please enter 9 numeric characters."
-isbn_number("0-321@14653-") # Fails - "Please enter 9 numeric characters."
-isbn_number("877195x86") # Fails - "Please input only numeric characters."
+# # Invalid ISBN
+# isbn_number("478047005902") # Fails - "Please enter 9 numeric characters."
+# isbn_number("0-321@14653-") # Fails - "Please enter 9 numeric characters."
+# isbn_number("8777954a6") # Fails - "Please input only numeric characters."
